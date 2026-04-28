@@ -70,7 +70,7 @@ export default function Hero() {
             Available for New Partnerships
           </motion.div>
           
-          <motion.h1 variants={item} className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] uppercase">
+          <motion.h1 variants={item} className="text-5xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] uppercase">
             Engineering the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
               Next Generation
@@ -99,7 +99,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="mt-24 border-t border-white/5 pt-12"
+          className="mt-12 md:mt-24 border-t border-white/5 pt-8 md:pt-12"
         >
           <p className="text-[10px] text-gray-500 uppercase tracking-[0.3em] mb-6">Core Development Stack</p>
           <div className="flex flex-wrap gap-x-12 gap-y-6 opacity-30 grayscale hover:grayscale-0 hover:opacity-100 transition-all">

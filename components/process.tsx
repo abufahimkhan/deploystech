@@ -11,11 +11,11 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className="py-16 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-refined opacity-5" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-        <div className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+        <div className="mb-12 md:mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <div>
             <div className="text-cyan-400 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">Internal Workflow</div>
             <h2 className="text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.9]">

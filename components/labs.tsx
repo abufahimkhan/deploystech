@@ -11,7 +11,7 @@ const ventures = [
 
 export default function Labs() {
   return (
-    <section id="labs" className="py-32 relative bg-[#050505] overflow-hidden">
+    <section id="labs" className="py-16 md:py-32 relative bg-[#050505] overflow-hidden">
       <div className="absolute top-0 right-0 w-[800px] h-px bg-gradient-to-l from-transparent via-cyan-500/30 to-transparent" />
       
       {/* Animated Stream Lines */}
@@ -34,7 +34,7 @@ export default function Labs() {
       </div>
       
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row gap-20 items-start">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
           <div className="lg:w-1/3">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[10px] font-bold uppercase tracking-[0.3em] mb-8">
               <FlaskConical className="h-3 w-3" />

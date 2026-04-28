@@ -27,9 +27,9 @@ export default function Home() {
       <Process />
       
       {/* Tech Landscape Visualization */}
-      <section className="py-24 relative overflow-hidden bg-black/50">
+      <section className="py-16 md:py-24 relative overflow-hidden bg-black/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
              <div className="relative aspect-square max-w-md mx-auto lg:mx-0">
                 <div className="absolute inset-0 bg-cyan-500/10 blur-[100px] rounded-full" />
                 <div className="absolute inset-4 border border-white/5 rounded-[3rem] p-8 flex flex-col justify-between glass">
@@ -87,20 +87,20 @@ export default function Home() {
       <Services />
       
       {/* Vision / Mission Section with Graphics */}
-      <section id="about" className="py-40 relative bg-[#0a0a0a] overflow-hidden">
+      <section id="about" className="py-20 md:py-40 relative bg-[#0a0a0a] overflow-hidden">
         <div className="absolute top-1/2 left-0 w-full h-px bg-white/5 -z-10" />
         <div className="absolute top-1/2 left-1/4 w-px h-64 bg-cyan-500/20 -z-10" />
         
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-5 gap-20 items-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20 items-center">
           <div className="lg:col-span-3 text-center lg:text-left">
-            <div className="inline-block px-4 py-1 border border-white/10 bg-white/5 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 mb-12">
+            <div className="inline-block px-4 py-1 border border-white/10 bg-white/5 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 mb-6 md:mb-12">
               The Digital Manifest
             </div>
-            <h2 className="text-4xl md:text-7xl font-black mb-12 tracking-tighter leading-tight font-sans uppercase">
+            <h2 className="text-3xl md:text-7xl font-black mb-6 md:mb-12 tracking-tighter leading-tight font-sans uppercase">
               &quot;Simple tools, <br className="hidden md:block" />
               built with terminal-grade precision.&quot;
             </h2>
-            <p className="text-gray-500 text-xl md:text-2xl font-light tracking-wide leading-relaxed mb-16 max-w-3xl">
+            <p className="text-gray-500 text-lg md:text-2xl font-light tracking-wide leading-relaxed mb-8 md:mb-16 max-w-3xl">
               DeploysTech is a software collective focused on solving the structural 
               challenges of Bangladesh. We bridge the gap between 
               complex global tools and the unique needs of local ecosystems.
@@ -142,18 +142,18 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-40 bg-black relative overflow-hidden">
+      <section id="contact" className="py-20 md:py-40 bg-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-refined opacity-5" />
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-          <div className="bg-[#0a0a0a] border border-white/5 p-16 md:p-32 relative overflow-hidden group">
+          <div className="bg-[#0a0a0a] border border-white/5 p-8 sm:p-16 md:p-24 lg:p-32 relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-cyan-950/10 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/2 transition-all duration-1000 group-hover:bg-cyan-900/20" />
             
             <div className="relative z-10 max-w-3xl">
               <div className="text-cyan-400 text-[10px] font-bold uppercase tracking-[0.3em] mb-6">Partnership</div>
-              <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tighter uppercase leading-[0.85]">
+              <h2 className="text-4xl sm:text-5xl md:text-8xl font-black mb-10 tracking-tighter uppercase leading-[0.85]">
                 Ready to <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Deploy</span> <br /> your vision?
               </h2>
-              <p className="text-gray-500 text-xl mb-16 leading-relaxed max-w-xl font-sans">
+              <p className="text-gray-500 text-lg md:text-xl mb-8 md:mb-16 leading-relaxed max-w-xl font-sans">
                 Partner with our engineering team to build high-performance products 
                 that define market categories.
               </p>
