@@ -68,11 +68,11 @@ const item = {
 
 export default function Products() {
   return (
-    <section id="products" className="py-32 relative overflow-hidden">
+    <section id="products" className="py-16 md:py-32 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-grid-refined opacity-[0.02] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 gap-8">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -108,12 +108,12 @@ export default function Products() {
             <motion.div
               key={i}
               variants={item}
-              className={`group relative p-12 bg-[#0a0a0a] border-l-4 ${product.borderColor} ${product.hoverBg} transition-all cursor-pointer overflow-hidden`}
+              className={`group relative p-6 md:p-12 bg-[#0a0a0a] border-l-4 ${product.borderColor} ${product.hoverBg} transition-all cursor-pointer overflow-hidden`}
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 pointer-events-none transition-opacity duration-700 noise" />
               
               <div className="relative z-10">
-                <div className="flex justify-between items-start mb-12">
+                <div className="flex justify-between items-start mb-6 md:mb-12">
                   <product.icon className="h-10 w-10 text-gray-500 group-hover:text-cyan-400 transition-all duration-500" />
                   <div className="flex items-center gap-2 text-[8px] font-mono text-gray-700 uppercase tracking-widest group-hover:text-cyan-400/50 transition-colors">
                     Deployment Active <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -137,7 +137,7 @@ export default function Products() {
           {/* Partnership Pitch Card */}
           <motion.div 
             variants={item}
-            className="p-12 bg-[#050505] flex flex-col items-center justify-center text-center border-dashed border-2 border-white/5 hover:border-cyan-500/30 transition-colors cursor-pointer group relative overflow-hidden"
+            className="p-6 md:p-12 bg-[#050505] flex flex-col items-center justify-center text-center border-dashed border-2 border-white/5 hover:border-cyan-500/30 transition-colors cursor-pointer group relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-cyan-400/5 opacity-0 group-hover:opacity-100 transition-opacity" />
             <p className="text-[10px] text-gray-600 font-bold uppercase tracking-widest mb-4 z-10">Have an Idea?</p>

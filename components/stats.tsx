@@ -11,9 +11,9 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-24 border-y border-white/5 bg-[#030303]">
+    <section className="py-12 md:py-24 border-y border-white/5 bg-[#030303]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
           {stats.map((stat, i) => (
             <motion.div
               key={i}

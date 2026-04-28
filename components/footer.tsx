@@ -4,11 +4,11 @@ import { Terminal, Github, Twitter, Linkedin, ExternalLink } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="relative py-24 border-t border-gray-900 bg-[#050505] overflow-hidden">
+    <footer className="relative py-16 md:py-24 border-t border-gray-900 bg-[#050505] overflow-hidden">
       <div className="absolute inset-0 bg-grid-refined opacity-10 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16 mb-12 md:mb-24">
           <div className="col-span-1 md:col-span-2">
             <a href="#" className="flex items-center gap-3 mb-8 group">
               <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded flex items-center justify-center p-1.5 transition-transform group-hover:scale-110">

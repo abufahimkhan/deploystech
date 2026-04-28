@@ -53,11 +53,11 @@ export default function Services() {
   const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
 
   return (
-    <section id="services" className="py-32 bg-black border-t border-white/5 relative">
+    <section id="services" className="py-16 md:py-32 bg-black border-t border-white/5 relative">
       <div className="absolute inset-0 bg-grid-refined opacity-20 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-        <div className="mb-20">
+        <div className="mb-12 md:mb-20">
           <div className="text-purple-400 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">Service Capabilities</div>
           <h2 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 uppercase">
             Beyond <span className="text-white/30 italic">Standards</span>
@@ -75,7 +75,7 @@ export default function Services() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               onClick={() => setSelectedService(service)}
-              className="group p-12 bg-[#050505] hover:bg-white/[0.02] transition-all cursor-pointer relative"
+              className="group p-8 md:p-12 bg-[#050505] hover:bg-white/[0.02] transition-all cursor-pointer relative"
             >
               <div className="absolute top-4 right-4 text-[8px] font-mono text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity">CLICK FOR DETAILS</div>
               <div className="mb-8 text-gray-500 group-hover:text-purple-400 transition-colors group-hover:scale-110 origin-left duration-500">
@@ -92,12 +92,12 @@ export default function Services() {
 
       <AnimatePresence>
         {selectedService && (
-          <div className="fixed inset-0 z-[200] flex items-center justify-center p-6 bg-black/90 backdrop-blur-xl">
+          <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 sm:p-6 bg-black/90 backdrop-blur-xl overflow-y-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="max-w-2xl w-full bg-[#0a0a0a] border border-white/10 p-12 relative overflow-hidden"
+              className="max-w-2xl w-full bg-[#0a0a0a] border border-white/10 p-6 sm:p-12 relative overflow-hidden my-auto"
             >
               <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/10 blur-[100px] -translate-y-1/2 translate-x-1/2" />
               
@@ -113,7 +113,7 @@ export default function Services() {
                 <div className="inline-flex p-4 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 mb-8">
                   <selectedService.icon className="h-10 w-10" />
                 </div>
-                <h3 className="text-4xl font-black uppercase mb-6 tracking-tighter">{selectedService.title}</h3>
+                <h3 className="text-3xl md:text-4xl font-black uppercase mb-6 tracking-tighter">{selectedService.title}</h3>
                 <p className="text-gray-400 text-xl leading-relaxed mb-8 font-sans">
                   {selectedService.details}
                 </p>
